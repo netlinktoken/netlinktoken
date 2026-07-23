@@ -1,5 +1,3 @@
-![Streak GitHub](https://herokuapp.com)
-
 # 🪩 Netlink (NET)
 
 Welcome to the **official GitHub profile of Netlink**, a community-driven Web3 ecosystem built on the **Polygon (PoS)** network.
