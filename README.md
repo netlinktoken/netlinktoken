@@ -1,9 +1,11 @@
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=netlinktoken)
+
 ![Version](https://img.shields.io/badge/version-v1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Polygon](https://img.shields.io/badge/Polygon-Supported-purple)
 ![Status](https://img.shields.io/badge/status-Active-success)
 
-# 🪩 Netlink (NET)
+# 🪩 Netlink Developer
 
 Welcome to the **official GitHub profile of Netlink**, a Web3 ecosystem built on the **Polygon (PoS)** network.
 
