@@ -2,8 +2,11 @@ name: Generate Streak Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # tiap hari jam 00:00 UTC
+    - cron: "0 0 * * *"   # tiap hari jam 00:00 UTC
   workflow_dispatch:        # bisa jalan manual dari tab Actions
+  push:
+    paths:
+      - ".github/workflows/streak.yml"
 
 jobs:
   generate:
@@ -17,13 +20,14 @@ jobs:
       - name: Generate streak SVG
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          user_id: netlinktoken
-          output: assets/streak-stats.svg
+          options: user=netlinktoken&theme=default&disable_animations=true
+          path: assets/streak-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/streak-stats.svg
           git diff --staged --quiet || git commit -m "chore: update streak stats"
           git push
