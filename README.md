@@ -1,4 +1,4 @@
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=netlinktoken)
+![GitHub Streak](./assets/streak-stats.svg)
 
 ![Version](https://img.shields.io/badge/version-v1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
